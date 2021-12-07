@@ -1,6 +1,6 @@
-const Joi = require('joi')
-const mongoose = require('mongoose')
-const validate = require('mongoose-validator')
+const Joi = require('joi');
+const mongoose = require('mongoose');
+const validate = require('mongoose-validator');
 
 
 const nameValidator = [
@@ -14,16 +14,16 @@ const nameValidator = [
       passIfEmpty: true,
       message: 'Name should contain alpha-numeric characters only',
     }),
-  ]
+  ];
 
 const genreSchema = new mongoose.Schema({
     name: {
         type:String,
         validate: nameValidator
     }
-})
+});
 
-const Genre = mongoose.model('Genre', genreSchema)
+const Genre = mongoose.model('Genre', genreSchema);
 
 
 function validateGenre(genre) {
@@ -36,6 +36,6 @@ function validateGenre(genre) {
     return schema.validate(genre)
 }
 
-exports.Genre = Genre
-exports.genreSchema = genreSchema
-exports.validateGenre = validateGenre
+exports.Genre = Genre;
+exports.genreSchema = genreSchema;
+exports.validateGenre = validateGenre;

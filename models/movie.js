@@ -1,7 +1,7 @@
-const Joi = require('joi')
-const mongoose = require('mongoose')
-const validate = require('mongoose-validator')
-const {genreSchema} = require('./genre')
+const Joi = require('joi');
+const mongoose = require('mongoose');
+const validate = require('mongoose-validator');
+const {genreSchema} = require('./genre');
 
 
 const nameValidator = [
@@ -15,7 +15,7 @@ const nameValidator = [
       passIfEmpty: true,
       message: 'Name should contain alpha-numeric characters only',
     }),
-  ]
+  ];
 
 
 
@@ -43,7 +43,7 @@ const Movie = mongoose.model('Movie', new mongoose.Schema({
             default: 0
         }
     })
-)
+);
 
 
 function validateMovie(movie) {
@@ -56,5 +56,6 @@ function validateMovie(movie) {
     return schema.validate(movie)
 }
 
-exports.Movie = Movie
-exports.validateMovie = validateMovie
+
+exports.Movie = Movie;
+exports.validateMovie = validateMovie;

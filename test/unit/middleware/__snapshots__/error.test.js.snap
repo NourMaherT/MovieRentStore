@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error middleware should return error 500 if somthing failed 1`] = `"Somthing Failed."`;

@@ -1,18 +1,19 @@
 const request = require('supertest');
-const {Genre} = require('../../models/genre');
-const {User} = require('../../models/user');
+const {Genre} = require('../../../models/genre');
+const {User} = require('../../../models/user');
 const mongoose = require('mongoose');
 
 describe('Auth test', () => {
+    let server;
     let token;
 
     beforeEach(() => { 
-        server = require('../../index');
+        server = require('../../../index');
         token = new User().generateAuthToken();
     });
     afterEach( async () => {
-        server.close();
         await Genre.deleteMany({});
+        await server.close();
     });
 
     const exec = () => {

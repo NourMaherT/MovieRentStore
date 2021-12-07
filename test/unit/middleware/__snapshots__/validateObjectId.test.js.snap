@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Validate middleware should return error 404 if object id is not vaild 1`] = `"Invalid ID"`;
+
+exports[`ValidateObjectId middleware should return error 404 if object id is not vaild 1`] = `"Invalid ID"`;

@@ -1,6 +1,6 @@
-const validate = require('mongoose-validator')
-const Joi = require('joi')
-const mongoose = require('mongoose')
+const validate = require('mongoose-validator');
+const Joi = require('joi');
+const mongoose = require('mongoose');
 
 
 const nameValidator = [
@@ -14,7 +14,7 @@ const nameValidator = [
       passIfEmpty: true,
       message: 'Name should contain alpha-numeric characters only',
     }),
-  ]
+  ];
 
   const Customer = mongoose.model('Customer', new mongoose.Schema({
         name: {
@@ -31,20 +31,22 @@ const nameValidator = [
             default: false
         }
     })
-  )
+  );
 
   function validateCustomer(customer) {
     const schema = Joi.object({
         name: Joi.string()
                 .min(3)
+                .max(50)
                 .required(),
         phone: Joi.string()
                 .min(3)
+                .max(255)
                 .required(),
         isGold: Joi.boolean()
     })
     return schema.validate(customer)
 }
 
-exports.Customer = Customer
-exports.validateCustomer = validateCustomer
+exports.Customer = Customer;
+exports.validateCustomer = validateCustomer;
