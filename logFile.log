@@ -1,9 +1,14 @@
+{"level":"info","message":"listening on port 3002..."}
+{"level":"info","message":"Connected to the mongodb://localhost/vidly ..."}
+{"level":"info","message":"listening on port 3002..."}
+{"level":"info","message":"Connected to the mongodb://localhost/vidly ..."}
+{"level":"info","message":"listening on port 3002..."}
+{"level":"info","message":"Connected to the mongodb://localhost/vidly ..."}
+{"level":"info","message":"listening on port 3002..."}
+{"level":"info","message":"Connected to the mongodb://localhost/vidly ..."}
+{"level":"info","message":"listening on port 3002..."}
+{"level":"info","message":"Connected to the mongodb://localhost/vidly ..."}
+{"level":"info","message":"listening on port 3002..."}
 {"level":"info","message":"Connected to the mongodb://localhost/vidly ..."}
 {"level":"info","message":"listening on port 3000..."}
-{"level":"info","message":"Connected to the mongodb://localhost/vidly ..."}
-{"level":"info","message":"listening on port 3000..."}
-{"level":"info","message":"Connected to the mongodb://localhost/vidly ..."}
-{"level":"info","message":"listening on port 3000..."}
-{"level":"info","message":"Connected to the mongodb://localhost/vidly ..."}
-{"level":"info","message":"listening on port 3000..."}
-{"level":"info","message":"Connected to the mongodb://localhost/vidly ..."}
+{"level":"info","message":"Connected to the mongodb://localhost/movieRentStore ..."}

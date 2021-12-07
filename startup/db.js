@@ -4,6 +4,6 @@ const config = require('config');
 
 module.exports = function() {
     const db = config.get('db');
-    mongoose.connect(db)
+    mongoose.connect(db, { useUnifiedTopology: true })
             .then(() => winston.info(`Connected to the ${db} ...`));
 }
